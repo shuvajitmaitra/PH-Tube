@@ -9,12 +9,12 @@ const displayCategory = (categories) => {
   categories.forEach(category => {
     const div = document.createElement('div');  //Tab.............
     div.innerHTML = `
-    <div class="tabs">
+
           <button onclick = "cardLoad('${category?.category_id}')"
-            class="tab bg-[#25252533] rounded-[4px] focus:bg-[#FF1F3D] focus:text-white font-medium"
+            class="tab bg-[#25252533] rounded-[4px] text-gray-500 focus:bg-[#FF1F3D] focus:text-white font-medium"
             >${category?.category}</button
           >
-        </div>
+   
     `;
 
     tabContainer.appendChild(div);
@@ -71,17 +71,17 @@ const cardSorting = (cards) => {
                   
                 </div>
                 <div class="w-3/4">
-                  <h1 class="font-bold text-sm">
+                  <h1 class="font-bold">
                   ${card?.title}
                   </h1>
   
                   <div class="flex">
-                    <h2 class="text-[#171717B2]">${card?.authors[0]?.profile_name}</h2>
+                    <h2 class="text-[#171717B2] text-sm">${card?.authors[0]?.profile_name}</h2>
                     <p></p>
                     <img src=${card?.authors[0]?.verified ? "./image/verify.png" : "."}  alt="" class="w-6 ml-1 " id="isVerified"/>
                   </div>
                   <div id="new-container">
-                  <p id="views" class="text-[#171717B2]">${card?.others?.views} views</p>
+                  <p id="views" class="text-[#171717B2] text-sm">${card?.others?.views} views</p>
                   </div>
                 </div>
               </div>
@@ -125,17 +125,17 @@ const displayCard = (cards) => {
                     
                   </div>
                   <div class="w-3/4">
-                    <h1 class="font-bold text-sm">
+                    <h1 class="font-bold">
                     ${card?.title}
                     </h1>
     
                     <div class="flex">
-                      <h2 class="text-[#171717B2]">${card?.authors[0]?.profile_name}</h2>
+                      <h2 class="text-[#171717B2] text-sm">${card?.authors[0]?.profile_name}</h2>
                       <p></p>
                       <img src=${card?.authors[0]?.verified ? "./image/verify.png" : "."}  alt="" class="w-6 ml-1 " id="isVerified"/>
                     </div>
                     <div id="new-container">
-                    <p id="views" class="text-[#171717B2]">${card?.others?.views} views</p>
+                    <p id="views" class="text-[#171717B2] text-sm">${card?.others?.views} views</p>
                     </div>
                   </div>
                 </div>
