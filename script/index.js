@@ -67,10 +67,10 @@ const cardSorting = (cards) => {
             </figure>
             <div class="">
               <div class="flex my-5 justify-between">
-                <div class="w-16 h-16 mx-2 rounded-full bg-[url('${card?.authors[0]?.profile_picture}')] bg-cover bg-center">
+                <div class="w-10 h-10 ml-2 rounded-full bg-[url('${card?.authors[0]?.profile_picture}')] bg-cover bg-center">
                   
                 </div>
-                <div class="w-3/4">
+                <div class="w-[80%]">
                   <h1 class="font-bold">
                   ${card?.title}
                   </h1>
@@ -78,7 +78,7 @@ const cardSorting = (cards) => {
                   <div class="flex">
                     <h2 class="text-[#171717B2] text-sm">${card?.authors[0]?.profile_name}</h2>
                     <p></p>
-                    <img src=${card?.authors[0]?.verified ? "./image/verify.png" : "."}  alt="" class="w-6 ml-1 " id="isVerified"/>
+                    <img src=${card?.authors[0]?.verified ? "./image/verify.png" : "."}  alt="" class="w-5 ml-1 " id="isVerified"/>
                   </div>
                   <div id="new-container">
                   <p id="views" class="text-[#171717B2] text-sm">${card?.others?.views} views</p>
@@ -121,10 +121,10 @@ const displayCard = (cards) => {
               </figure>
               <div class="">
                 <div class="flex my-5 justify-between">
-                  <div class="w-16 h-16 mx-2 rounded-full bg-[url('${card?.authors[0]?.profile_picture}')] bg-cover bg-center">
+                  <div class="w-10 h-10 ml-2 rounded-full bg-[url('${card?.authors[0]?.profile_picture}')] bg-cover bg-center">
                     
                   </div>
-                  <div class="w-3/4">
+                  <div class="w-[80%]">
                     <h1 class="font-bold">
                     ${card?.title}
                     </h1>
@@ -132,7 +132,7 @@ const displayCard = (cards) => {
                     <div class="flex">
                       <h2 class="text-[#171717B2] text-sm">${card?.authors[0]?.profile_name}</h2>
                       <p></p>
-                      <img src=${card?.authors[0]?.verified ? "./image/verify.png" : "."}  alt="" class="w-6 ml-1 " id="isVerified"/>
+                      <img src=${card?.authors[0]?.verified ? "./image/verify.png" : "."}  alt="" class="w-5 ml-1 " id="isVerified"/>
                     </div>
                     <div id="new-container">
                     <p id="views" class="text-[#171717B2] text-sm">${card?.others?.views} views</p>
