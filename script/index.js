@@ -52,7 +52,7 @@ const cardSorting = (cards) => {
     let hours = Math.floor(second / 3600);
     let mins = Math.floor(((second / 3600) - hours) * 60);
     div.innerHTML = `
-          <div class="card bg-base-300 shadow-xl">
+          <div class="card shadow-lg">
             <figure class="relative">
               <img
                 src=${card?.thumbnail}
@@ -67,7 +67,7 @@ const cardSorting = (cards) => {
             </figure>
             <div class="">
               <div class="flex my-5 justify-between">
-                <div class="w-16 h-16 rounded-full bg-[url('${card?.authors[0]?.profile_picture}')] bg-cover bg-center">
+                <div class="w-16 h-16 mx-2 rounded-full bg-[url('${card?.authors[0]?.profile_picture}')] bg-cover bg-center">
                   
                 </div>
                 <div class="w-3/4">
@@ -106,7 +106,7 @@ const displayCard = (cards) => {
       let hours = Math.floor(second / 3600);
       let mins = Math.floor(((second / 3600) - hours) * 60);
       div.innerHTML = `
-            <div class="card bg-base-300 shadow-xl">
+            <div class="card shadow-lg">
               <figure class="relative">
                 <img
                   src=${card?.thumbnail}
@@ -121,7 +121,7 @@ const displayCard = (cards) => {
               </figure>
               <div class="">
                 <div class="flex my-5 justify-between">
-                  <div class="w-16 h-16 rounded-full bg-[url('${card?.authors[0]?.profile_picture}')] bg-cover bg-center">
+                  <div class="w-16 h-16 mx-2 rounded-full bg-[url('${card?.authors[0]?.profile_picture}')] bg-cover bg-center">
                     
                   </div>
                   <div class="w-3/4">
