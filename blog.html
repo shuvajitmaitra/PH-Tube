@@ -43,8 +43,8 @@
           <i class="fa-brands fa-slack"></i>
           <h1 class="underline">Discuss the scope of var, let, and const</h1>
         </div>
-        <div>
-          <p class="bg-green-100 p-4 rounded-lg m-3">
+         <div class="bg-green-100 p-4 rounded-lg m-3">
+          <p>
             In sort term, Scope mean where we can access the variable.
             Basically, scope are two types global scope and functional scope.
             When we can access the variable anywhere of the document then it is
@@ -52,14 +52,14 @@
             function where we declare the variable then it is called functional
             scope variable.
           </p>
-          <p class="bg-green-100 p-4 rounded-lg m-3">
+          <p class="mt-4">
             <span class="text-lg font-medium underline">Var:</span>
             <br />
             var is a global scope variable, because we can access the variable
             from anywhere, inside of the function and outside of the function.
             Also, var can be redeclare and reassign.
           </p>
-          <p class="bg-green-100 p-4 rounded-lg m-3">
+          <p class="mt-4">
             <span class="text-lg font-medium underline">let:</span>
             <br />
             let is a function scope variable, because we can not access the
@@ -69,13 +69,14 @@
             redeclare.
           </p>
 
-          <p class="bg-green-100 p-4 rounded-lg m-3">
+          <p class="mt-4">
             <span class="text-lg font-medium underline">const:</span>
             <br />
             const is also a function scope variable. It's behavior almost same
             as the let variable, only major difference is const variable can not
             redeclare and reassign.
           </p>
+         </div>
         </div>
       </article>
       <!------------------------ Second Question ------------------------->
@@ -85,25 +86,28 @@
           <h1 class="underline">Tell us the use cases of null and undefined</h1>
         </div>
 
-        <p class="bg-green-100 p-4 rounded-lg m-3">
-          <span class="text-lg font-medium underline">Null:</span>
-          <br />
-          When we set a variable value as empty then the variable returns
-          "Null".When we assign "null" as a value to any variable, it means that
-          it is empty or blank.
-          <br />
-          when we want any variable contain no value then we use "null", It is
-          also use in various condition and operations.
-        </p>
-        <p class="bg-green-100 p-4 rounded-lg m-3">
-          <span class="text-lg font-medium underline">Undefined:</span>
-          <br />
-          When we declare a variable but do not set any value to this variable,
-          then the variable returns "undefined". Also, when we write a function
-          with taking parameter but returns nothing then it's returns
-          "undefined" and try to access object property which dose not exist in
-          the object. Mainly undefined and null are use in error handling.
-        </p>
+        <div class="bg-green-100 p-4 rounded-lg m-3">
+          <p>
+            <span class="text-lg font-medium underline">Null:</span>
+            <br />
+            When we set a variable value as empty then the variable returns
+            "Null". When we assign "null" as a value to any variable, it means
+            that it is empty or blank.
+            <br />
+            When we want any variable contain no value then we use "null", It is
+            also use in various condition and operations.
+          </p>
+          <p class="mt-4">
+            <span class="text-lg font-medium underline">Undefined:</span>
+            <br />
+            When we declare a variable but do not set any value to this
+            variable, then the variable returns "undefined". Also, when we write
+            a function with taking parameter but returns nothing then it's
+            returns "undefined" and try to access object property which dose not
+            exist in the object. Mainly undefined and null are use in error
+            handling.
+          </p>
+        </div>
       </article>
       <!------------------------ Third Question ------------------------->
       <article>
@@ -114,6 +118,7 @@
 
         <p class="bg-green-100 p-4 rounded-lg m-3">
           <span class="text-lg font-medium underline">REST API:</span>
+          <br />
           REST means Representational State Transfer and API means Application
           Programming Interface. In sort term, I means REST API is when we sent
           request to the server base on "GRUD"(GET, READ, UPDATE, DELETE)

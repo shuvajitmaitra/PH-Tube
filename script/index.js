@@ -150,7 +150,7 @@ const displayCard = (cards) => {
   else {
     const div = document.createElement('div'); //Empty card...............
     div.innerHTML = `
-        <div class="flex flex-col justify-center items-center text-center mt-12 md:mt-12">
+        <div class="flex flex-col justify-center items-center text-center mt-12 md:mt-12 w-3/4 mx-auto">
           <img src="./image/Icon.png" alt="" class="" />
           <h3 class="text-xl lg:text-4xl font-bold mt-5">
             Oops!! Sorry, There is no content here
